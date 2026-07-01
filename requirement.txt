@@ -1,0 +1,10 @@
+openai>=1.35.0
+SpeechRecognition>=3.10.0
+pyttsx3>=2.90
+requests>=2.32.0
+python-dotenv>=1.0.1
+google-generativeai>=0.7.2
+wikipedia
+pyjokes
+beautifulsoup4
+lxml
