@@ -1,36 +1,19 @@
-import speech_recognition as sr
-
-recognizer = sr.Recognizer()
-
-def listen():
-    """
-    Listen to the user's voice and convert it to text.
-    """
-    try:
-        with sr.Microphone() as source:
-            print("🎤 Listening...")
-            recognizer.adjust_for_ambient_noise(source, duration=1)
-            audio = recognizer.listen(source)
-
-        text = recognizer.recognize_google(audio, language="en-US")
-        print(f"You: {text}")
-        return text.lower()
-
-    except sr.UnknownValueError:
-        return ""
-
-    except sr.RequestError:
-        print("Speech recognition service unavailable.")
-        return ""
-
-    except Exception as e:
-        print("Error:", e)
-        return ""
-
+import subprocess
+import os
 
 def speak(text):
-    """
-    Temporary text output.
-    Voice output will be added later.
-    """
     print(f"Jarvis: {text}")
+    os.system(f'termux-tts-speak "{text}"')
+
+def listen():
+    print("Listening... Speak after the beep.")
+
+    subprocess.run([
+        "termux-microphone-record",
+        "-f",
+        "/sdcard/jarvis.wav",
+        "-l",
+        "5"
+    ])
+
+    return input("You: ")
