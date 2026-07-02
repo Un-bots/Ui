@@ -1,19 +1,29 @@
-from speech import listen, speak
+from speech import speak, listen
 from ai import ask_ai
-from config import ASSISTANT_NAME
 
 def main():
-    speak(f"{ASSISTANT_NAME} is now online.")
+
+    speak("Hello Sir. Jarvis is now online.")
 
     while True:
+
         query = listen()
 
         if not query:
             continue
 
+        query = query.lower()
+
         if query in ["exit", "quit", "stop", "goodbye"]:
             speak("Goodbye Sir.")
             break
+
+        if "jarvis" in query:
+            query = query.replace("jarvis", "").strip()
+
+            if query == "":
+                speak("Yes Sir?")
+                continue
 
         response = ask_ai(query)
         speak(response)
