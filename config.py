@@ -1,5 +1,5 @@
 # ===========================
-# Jarvis AI Configuration
+# UI Configuration
 # ===========================
 
 ASSISTANT_NAME = "UI"
