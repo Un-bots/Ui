@@ -33,4 +33,4 @@ def speak(text):
     Temporary text output.
     Voice output will be added later.
     """
-    print(f"Jarvis: {text}")
+    print(f"UI: {text}")
