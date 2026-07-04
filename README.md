@@ -1,4 +1,4 @@
-# 🤖 UI Ai Assistant 
+#[UI](https://github.com/Un-bots/Ui) ~ Ai Assistant 
 
 ## Install
 
@@ -41,3 +41,5 @@ python main.py
 ```bash
 git pull
 ```
+
+
