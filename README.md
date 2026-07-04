@@ -1,3 +1,11 @@
+#  UI AI
+
+![Visitors](https://komarev.com/ghpvc/?username=Un-bots&repo=Ui&label=Visitors&style=for-the-badge)
+
+An AI Voice Assistant for Android (Termux).
+
+
+
 #[UI](https://github.com/Un-bots/Ui) ~ Ai Assistant 
 
 ## Install
