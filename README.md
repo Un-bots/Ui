@@ -151,11 +151,6 @@ pkg update && pkg upgrade -y
 pip install package_name
 ```
 
-Example
-
-```bash
-pip install requests
-```
 
 ---
 
