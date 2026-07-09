@@ -33,7 +33,7 @@ pip install -r requirements.txt
 Open `config.py` and replace:
 
 ```python
-GEMINI_API_KEY = "YOUR_API_KEY"
+API_KEY = "YOUR_API_KEY"
 ```
 
 with your own API key.
